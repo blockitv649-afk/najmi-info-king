@@ -175,7 +175,7 @@ def get_player_info():
         message = AccountPersonalShowInfo()
         message.ParseFromString(bytes.fromhex(api_response))
         result = MessageToDict(message)
-        result['Owners'] = ['SENKU CODEX']
+        result['Owners'] = ['NAJMI_ADMIN']
         result['Supported_Regions'] = ['IND', 'BD', 'PK']
         return jsonify(result)
     
